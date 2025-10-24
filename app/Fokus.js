@@ -32,7 +32,7 @@ else{
 })
 
 focoBt.addEventListener('click', () => {
-    tempoDecorridoEmSegundos = 2
+    tempoDecorridoEmSegundos = 3600
     alterarContexto('foco')
     focoBt.classList.add('active')
 })
@@ -126,5 +126,6 @@ function mostrarTempo () {
     const tempoFormatado = tempo.toLocaleTimeString('pt-Br', {minute: '2-digit', second: '2-digit'})
     tempoNaTela.innerHTML = `${tempoFormatado}`
 }
+
 
 mostrarTempo()
