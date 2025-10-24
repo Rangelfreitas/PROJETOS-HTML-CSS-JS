@@ -17,7 +17,7 @@ const audioTempoFinalizado = new Audio('./sounds/beep.mp3')
 
 
 
-let tempoDecorridoEmSegundos = 2
+let tempoDecorridoEmSegundos = 3600
 let intervaloId = null
 
 musica.loop = true
@@ -129,3 +129,4 @@ function mostrarTempo () {
 
 
 mostrarTempo()
+
