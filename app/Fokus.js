@@ -17,7 +17,7 @@ const audioTempoFinalizado = new Audio('./sounds/beep.mp3')
 
 
 
-let tempoDecorridoEmSegundos = 3600
+let tempoDecorridoEmSegundos = 2
 let intervaloId = null
 
 musica.loop = true
@@ -32,7 +32,7 @@ else{
 })
 
 focoBt.addEventListener('click', () => {
-    tempoDecorridoEmSegundos = 3600
+    tempoDecorridoEmSegundos = 2
     alterarContexto('foco')
     focoBt.classList.add('active')
 })
@@ -44,7 +44,7 @@ curtoBt.addEventListener('click', () => {
 })
 
 longoBt.addEventListener('click', () => {
-    tempoDecorridoEmSegundos = 900
+    tempoDecorridoEmSegundos = 3600
    alterarContexto('descanso-longo')
    longoBt.classList.add('active')
 })
@@ -129,4 +129,5 @@ function mostrarTempo () {
 
 
 mostrarTempo()
+
 
